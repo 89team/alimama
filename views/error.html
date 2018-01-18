@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Error</title>
-</head>
-<body>
-出错了
-</body>
-</html>
+<% include layout/header.html %>
+
+  <%- message %>
+  <%- error.status %>
+  <%- error.stack %>
+
+<% include layout/footer.html %>
